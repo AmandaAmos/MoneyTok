@@ -1,0 +1,24 @@
+{
+  "name": "MoneyTok",
+  "version": "1.0.0",
+  "description": "## Overview  An application enabling teenagers to manage their money resources and goals, with education resources.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaAmos/MoneyTok.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaAmos/MoneyTok/issues"
+  },
+  "homepage": "https://github.com/AmandaAmos/MoneyTok#readme"
+}
