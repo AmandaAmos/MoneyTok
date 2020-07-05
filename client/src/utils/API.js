@@ -1,8 +1,9 @@
-import axios from "axios";
+// import axios from "axios";
 
-export default {
-    //getNewAriticles
-    getNewArticles: function(title) {
-        return axios.get(`${(NEWYORKTIMESKEY)}`)
-    }
-}
+// export default {
+//     //getNewScrapedArticles
+//     getScrapedArticles: function(title) {
+//         return axios.get(`${(NEWYORKTIMESKEY)}`)
+//     }
+//     //Connect to external heroku app with express server
+// };
