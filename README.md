@@ -14,7 +14,7 @@ An application enabling teenagers to manage their money resources and goals, wit
 * NodeJS
 * ExpressJS
 
-> Development
+## Development
 >> 1. Clone the repository. 
 >>      * git clone https://github.com/AmandaAmos/MoneyTok.git
 >> 2. Install npm dependencies. 
