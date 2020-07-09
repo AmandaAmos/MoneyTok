@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Column } from "../../components/Grid";
-import Article from "../../components/Card";
-// import Goals from "../../components/Goals";
-// import Graph from "../../components/Graph";
+import Card from "../../components/Card";
 import Navbar from "../../components/Navbar";
-// import Money from "../../components/Money";
-// import Login from "../../components/Login";
-// import Register from "../../components/Register";
 import Jumbotron from "../../components/Jumbotron";
 import Result from "../../components/Result";
 import KeyPad from "../../components/KeyPad";
@@ -91,17 +86,16 @@ class Dashboard extends Component {
                 </div>
                 <Container>
                   <Row>
-            <Column>
-            <Article />
-            </Column>
-          </Row>
-        </Container>
+                    <Column>
+                      <Card />
+                    </Column>
+                  </Row>
+                </Container>
             </div>
             </Container>
-         
         </div>
-        );
-      }
+       );
+     }
 }
 
 export default Dashboard;
