@@ -75,22 +75,41 @@ class Dashboard extends Component {
           <div>
             <Navbar />
             <Container>
-            <div>
-                <Jumbotron fluid>
-                    <h1>Money Tok</h1>
-                </Jumbotron>
-
+                <div>
+                    <Jumbotron fluid>
+                        <h1>Money Tok</h1>
+                    </Jumbotron>
+                    <Container>
+                        <Row>
+                        <Column>
+                      <Card />
+                    </Column>
+                    <Column>
+                      <Card />
+                    </Column>
+                    <Column>
+                      <Card />
+                    </Column>
+                        </Row>
+                <Row>
+                
+                    <Column>
+                      <Card />
+                    </Column>
+                    <Column>
+                      <Card />
+                    </Column>
+                <Column>
                 <div className="calculator-body">
                     <Result result={this.state.result} />
                     <KeyPad onClick={this.onClick} />
                 </div>
-                <Container>
-                  <Row>
-                    <Column>
-                      <Card />
-                    </Column>
-                  </Row>
+                </Column>
+                
+                
+                </Row>
                 </Container>
+
             </div>
             </Container>
         </div>
