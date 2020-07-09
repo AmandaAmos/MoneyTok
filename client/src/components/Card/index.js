@@ -16,8 +16,8 @@ function Card(){
             <div class="card-body">
                 <h5 class="card-title">New York Times Economy Articles</h5>
                 <p class="card-text">Put the Scraped/API called Articles here.</p>
-                {/*Insert card groups for the articles here: https://getbootstrap.com/docs/4.0/components/card/#border -- Card Columns or Card groups from this page}
-                {/* <a href="#" class="btn btn-primary">More Articles</a> */}
+                {/* Insert card groups for the articles here: https://getbootstrap.com/docs/4.0/components/card/#border -- Card Columns or Card groups from this page} */}
+                <a href="#" class="btn btn-primary">More Articles</a>
             </div>
         </div>
     )
