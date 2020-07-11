@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MoneyTok/precache-manifest.84eb059e9dff21e0d26edcc15b912fde.js"
+  "/MoneyTok/precache-manifest.5b560ad12f7cda167e4c9f21292b0f3b.js"
 );
 
 self.addEventListener('message', (event) => {
