@@ -99,9 +99,12 @@ class Dashboard extends Component {
                   Add New Income
                 </Button>
               </Card>
+
+            {/* Article Cards */}
               <Card>
                 <ArticleCard/>
               </Card>
+
                 {/* Expense Card */}
                 <Card className="text-center">
                 <Card.Body>
