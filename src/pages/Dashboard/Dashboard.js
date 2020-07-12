@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from "../../components/Grid";
 import { Card } from "react-bootstrap";
 import { CardColumns } from "react-bootstrap";
+import ArticleCard from "../../components/ArticleCard";
 import Navbar from "../../components/Navbar";
 import Jumbotron from "../../components/Jumbotron";
 import Result from "../../components/Result";
@@ -98,21 +99,9 @@ class Dashboard extends Component {
                   Add New Income
                 </Button>
               </Card>
-
               <Card>
-                <Card.Body>
-                  <Card.Title> 2. Card title</Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{" "}
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
+                <ArticleCard/>
               </Card>
-
-
                 {/* Expense Card */}
                 <Card className="text-center">
                 <Card.Body>
