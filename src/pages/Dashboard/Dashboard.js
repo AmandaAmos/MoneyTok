@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Container, Row, Column } from "../../components/Grid";
-import { Card } from "react-bootstrap";
+import { Container, Row } from "../../components/Grid";
+import { Card, Table} from "react-bootstrap";
 import { CardColumns } from "react-bootstrap";
+import ArticleCard from "../../components/ArticleCard";
 import Navbar from "../../components/Navbar";
 import Jumbotron from "../../components/Jumbotron";
 import Result from "../../components/Result";
@@ -63,120 +64,122 @@ class Dashboard extends Component {
     });
   };
 
-  // state = {
-  //     toLogin: false,
-  //     toRegister: false,
-  //     login: [],
-  //     register: [],
-  // };
-
   render() {
     return (
       <div>
         <Navbar />
-        <Container>
-          <div>
-            <Jumbotron fluid>
-              <h1>Money Tok</h1>
-            </Jumbotron>
-            <Container>
-              <Row>
-                <Column>
-                  <Card />
-                </Column>
-                <Column>
-                  <Card />
-                </Column>
-                <Column>
-                  <Card />
-                </Column>
-              </Row>
-
-              {/* Anne testing code below */}
-
-              <CardColumns>
-                <Card>
-                  <Card.Img variant="top" src="holder.js/100px160" />
-                  <Card.Body>
-                    <Card.Title>Card title that wraps to a new line</Card.Title>
+          <Container>
+            <Jumbotron fluid />
+          </Container>
+          <CardColumns>
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>Money In</Card.Title>
                     <Card.Text>
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Food</td>
+                            <td>Chipotle</td>
+                            <td>$10.00</td>
+                          </tr>
+                        </tbody>
+                      </Table>
                     </Card.Text>
-                  </Card.Body>
-                </Card>
-                <Card className="p-3">
-                  <blockquote className="blockquote mb-0 card-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer posuere erat a ante.
-                    </p>
-                    <footer className="blockquote-footer">
-                      <small className="text-muted">
-                        Someone famous in{" "}
-                        <cite title="Source Title">Source Title</cite>
-                      </small>
-                    </footer>
-                  </blockquote>
-                </Card>
-                <Card>
-                  <Card.Img variant="top" src="holder.js/100px160" />
-                  <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                      This card has supporting text below as a natural lead-in
-                      to additional content.{" "}
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer>
+                </Card.Body>
+              </Card>
+              <Card bg="primary" text="white" className="text-center p-3">
+                <blockquote className="blockquote mb-0 card-body">
+                  <p>
+                    Money Graphic Goes here
+                  </p>
+                  <footer className="blockquote-footer">
                     <small className="text-muted">
-                      Last updated 3 mins ago
+                      Someone famous in{" "}
+                      <cite title="Source Title">Source Title</cite>
                     </small>
-                  </Card.Footer>
-                </Card>
-                <Card bg="primary" text="white" className="text-center p-3">
-                  <blockquote className="blockquote mb-0 card-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer posuere erat a ante.
-                    </p>
-                    <footer className="blockquote-footer">
-                      <small className="text-muted">
-                        Someone famous in{" "}
-                        <cite title="Source Title">Source Title</cite>
-                      </small>
-                    </footer>
-                  </blockquote>
-                </Card>
-                <Card className="text-center">
-                  <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                  </footer>
+                </blockquote>
+              </Card>
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>Money Out</Card.Title>
+                    <Card.Text>
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Food</td>
+                            <td>Chipotle</td>
+                            <td>$10.00</td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card>
+                <ArticleCard />
+              </Card>
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>Savings Goals</Card.Title>
                     <Card.Text>
                       This card has supporting text below as a natural lead-in
                       to additional content.{" "}
                     </Card.Text>
                     <Card.Text>
-                      <small className="text-muted">
-                        Last updated 3 mins ago
-                      </small>
+                      <Table striped bordered hover>
+                        <div id="SavingsTable" class="card text-center">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Item</th>
+                              <th>Description</th>
+                              <th>Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Car</td>
+                              <td>Used Camero from Craigslist</td>
+                              <td>$12000.00</td>
+                            </tr>
+                          </tbody>
+                          <a href="#" class="btn btn-primary">New Goal</a>
+                        </div>
+                      </Table>
                     </Card.Text>
-                  </Card.Body>
-                </Card>
-
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Calculator</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Calculator</Card.Title>
                     <div className="calculator-body">
                       <Result result={this.state.result} />
                       <KeyPad onClick={this.onClick} />
                     </div>
-                  </Card.Body>
-                </Card>
-              </CardColumns>
-            </Container>
-          </div>
-        </Container>
+                </Card.Body>
+              </Card>
+          </CardColumns>
       </div>
     );
   }

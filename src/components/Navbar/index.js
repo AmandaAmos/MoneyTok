@@ -1,21 +1,21 @@
 import React from "react";
+import "./style.css";
 
 
 function Navbar() {
     return(
         <div class="fixed-top">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+            <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand">
+                        <img src="../../../images/MoneyTok.png" width="45" alt=""
+                        class="d-inline-block align-middle mr-2"></img>
+                        <span class="font-weight-bold">MoneyTok</span>
+                    </a>
                 </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
             </nav>
         </div>
+                             
     )
 }
 
