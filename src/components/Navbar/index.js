@@ -1,21 +1,26 @@
 import React from "react";
-
+import MoneyTok from "./MoneyTok.png";
 
 function Navbar() {
-    return(
-        <div class="fixed-top">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
+    return(       
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src={MoneyTok} width="45" alt="" class="d-inline-block align-middle mr-2"></img>
+                    <span class="font-weight-bold">MoneyTok</span>
+                </a>
+                {/* Todo:Fix dropdown capability  */}
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Transactions</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Articles</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Budget</a></li>
+                        </ul>
+                    </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            </nav>
-        </div>
+        </nav>
     )
 }
 
