@@ -10,6 +10,7 @@ import KeyPad from "../../components/KeyPad";
 import MoneyInTable from "../../components/MoneyInTable";
 import MoneyOutTable from "../../components/MoneyOutTable";
 import Button from "react-bootstrap/Button";
+import { PieChart } from "react-minimal-pie-chart";
 // import API from "../../utils/API";
 
 class Dashboard extends Component {
@@ -85,9 +86,9 @@ class Dashboard extends Component {
           <Jumbotron fluid>
             <h1>Money Tok</h1>
           </Jumbotron>
+
           <Container>
             <CardColumns>
-
               {/* Income Card */}
               <Card className="text-center">
                 <Card.Body>
@@ -100,21 +101,9 @@ class Dashboard extends Component {
                 </Button>
               </Card>
 
-            {/* Article Cards */}
+              {/* Article Cards */}
               <Card>
-                <ArticleCard/>
-              </Card>
-
-                {/* Expense Card */}
-                <Card className="text-center">
-                <Card.Body>
-                  <Card.Title>Expense</Card.Title>
-                  <Card.Title>(You Spent Money!)</Card.Title>
-                  <MoneyOutTable />
-                </Card.Body>
-                <Button variant="secondary" size="lg" block id="addExpense">
-                  Add New Expense
-                </Button>
+                <ArticleCard />
               </Card>
 
               <Card bg="primary" text="white" className="text-center p-3">
@@ -132,22 +121,32 @@ class Dashboard extends Component {
                 </blockquote>
               </Card>
 
-
+              {/* Pie chart Card */}
               <Card className="text-center">
                 <Card.Body>
-                  <Card.Title>4. Card title</Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{" "}
-                  </Card.Text>
-                  <Card.Text>
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </Card.Text>
+                  <Card.Title>Your Money Snapshot</Card.Title>
+                  <PieChart
+                    data={[
+                      { title: "Income", value: 125, color: "#85bb65" },
+                      { title: "Expenses", value: 30.18, color: "#BF0A30" },
+                    ]}
+                  />
                 </Card.Body>
               </Card>
 
+              {/* Expense Card */}
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>Expense</Card.Title>
+                  <Card.Title>(You Spent Money!)</Card.Title>
+                  <MoneyOutTable />
+                </Card.Body>
+                <Button variant="secondary" size="lg" block id="addExpense">
+                  Add New Expense
+                </Button>
+              </Card>
+
+              {/* Calculator Card */}
               <Card>
                 <Card.Body>
                   <Card.Title>Calculator</Card.Title>

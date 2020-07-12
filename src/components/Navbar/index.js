@@ -2,7 +2,7 @@ import React from "react";
 import MoneyTok from "./MoneyTok.png";
 import Login from "../Modal/Login";
 import Register from "../Modal/Register";
-
+import "./style.css";
 
 function Navbar() {
     return(       
