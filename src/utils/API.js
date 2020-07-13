@@ -1,38 +1,18 @@
-import React, { Component } from 'react';
+import http from "../http-common";
 
-class API extends Component {
-    constructor(){
-        super();
-        this.state={
-            data: [],
-        }
+class MoneyTokDataService {
+    post() {
+        return http.post("/login");
     }
-
-    componentDidMount(){
-        //change to be github pages when operational
-        fetch('http://localhost:3000')
-        .then((Response)=>Response.json())
-        .then((findresponse)=>
-        {
-            this.setState ({
-                data:findresponse,
-            });
-        });
+    post() {
+        return http.post("/NewUser");
     }
-    
-    render() {
-        return (
-            <div>
-                {
-                    this.state.data.map((dynamicData)=>
-                    <div>
-                        <span>{dynamicData.Username}</span>
-                        <span>{dynamicData.Password}</span>
-                    </div>
-                    )
-                }
-            </div>
-        );
+    get(id) {
+        return http.get(`/${id}`);
+    }
+    get() {
+        return http.get("/logout");
     }
 }
-export default API;
+
+export default new MoneyTokDataService();

@@ -2,7 +2,7 @@
 ### -- By Anne Jordan, Amanda Amos, Jowan Eiland, and Steffi Wellington
 
 ## Overview 
-An application enabling teenagers to manage their money resources and goals, with education resources.  
+An application enabling teenagers to manage their money resources and goals, with education resources. This is this teams first split stack project. The server side repo is [here](https://github.com/AmandaAmos/MoneyTokserver). 
 
 ## Functionalities
 * Budget Planner
