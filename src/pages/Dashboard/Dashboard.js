@@ -11,7 +11,7 @@ import MoneyInTable from "../../components/MoneyInTable";
 import MoneyOutTable from "../../components/MoneyOutTable";
 import Button from "react-bootstrap/Button";
 import { PieChart } from "react-minimal-pie-chart";
-import AddIncome from "../../components/Modal/Income";
+
 // import API from "../../utils/API";
 
 class Dashboard extends Component {
@@ -102,7 +102,7 @@ class Dashboard extends Component {
                   size="lg"
                   block
                   id="addIncome"
-                  onClick={AddIncome}
+                  href="/Transactions"
                 >
                   Add New Income
                 </Button>
@@ -115,7 +115,13 @@ class Dashboard extends Component {
                   <Card.Title>(You Spent Money!)</Card.Title>
                   <MoneyOutTable />
                 </Card.Body>
-                <Button variant="secondary" size="lg" block id="addExpense">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  block
+                  id="addExpense"
+                  href="/Transactions"
+                >
                   Add New Expense
                 </Button>
               </Card>
@@ -126,8 +132,9 @@ class Dashboard extends Component {
                   <Card.Title>Your Money Snapshot</Card.Title>
                   <PieChart
                     data={[
-                      { title: "Income", value: 125, color: "#85bb65" },
+                      { title: "Income", value: 125, color: "#85bb65"},
                       { title: "Expenses", value: 15, color: "#BF0A30" },
+                      
                     ]}
                   />
                 </Card.Body>
@@ -141,12 +148,11 @@ class Dashboard extends Component {
               <Card className="text-center p-3">
                 <blockquote className="blockquote mb-0 card-body">
                   <p>
-                    This made learning how to budget for my highschool finance class so fun!
+                    This made learning how to budget for my highschool finance
+                    class so fun!
                   </p>
                   <footer className="blockquote-footer">
-                    <small className="text-muted">
-                      Some kid probably
-                    </small>
+                    <small className="text-muted">Some kid probably</small>
                   </footer>
                 </blockquote>
               </Card>

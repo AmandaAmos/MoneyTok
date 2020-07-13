@@ -1,12 +1,13 @@
 import React from "react";
+import './style.css';
 
 const Jumbotron = ({ children }) => (
   <div className="jumbotron jumbotron-fluid">
     <div
       style={{
-        height: 50,
+        height: 60,
         clear: "both",
-        paddingTop: 30,
+        paddingTop: 40,
         paddingBottom: 20,
         textAlign: "Center",
       }}
