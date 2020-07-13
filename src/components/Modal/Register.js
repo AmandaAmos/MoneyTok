@@ -6,7 +6,7 @@ function Register() {
 
     return (
         <div>
-            <Button variant="link" onClick={() => setLgShow(true)}>
+            <Button style={{color: "white", padding: "5px" }} variant="link" onClick={() => setLgShow(true)}>
                 New User
             </Button>{''}
             <Modal

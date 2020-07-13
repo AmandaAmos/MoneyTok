@@ -22,7 +22,7 @@ const Example = (props) => {
         <tr>
           <th scope="row">2</th>
           <td>McDonald's</td>
-          <td>3rd</td>
+          <td></td>
           <th>5.18</th>
         </tr>
       </tbody>
