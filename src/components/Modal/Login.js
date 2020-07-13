@@ -5,7 +5,7 @@ function Login() {
     const [smShow, setSmShow] = useState(false);
     return (
         <div>
-            <Button variant="link" onClick={() => setSmShow(true)}>
+            <Button style={{color: "white", padding: "5px" }} variant="link" onClick={() => setSmShow(true)}>
                 Login
             </Button>{''}
             <Modal

@@ -11,6 +11,7 @@ import MoneyInTable from "../../components/MoneyInTable";
 import MoneyOutTable from "../../components/MoneyOutTable";
 import Button from "react-bootstrap/Button";
 import { PieChart } from "react-minimal-pie-chart";
+import AddIncome from "../../components/Modal/Income";
 // import API from "../../utils/API";
 
 class Dashboard extends Component {
@@ -96,42 +97,15 @@ class Dashboard extends Component {
                   <Card.Title>(You Got Money!)</Card.Title>
                   <MoneyInTable />
                 </Card.Body>
-                <Button variant="secondary" size="lg" block id="addIncome">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  block
+                  id="addIncome"
+                  onClick={AddIncome}
+                >
                   Add New Income
                 </Button>
-              </Card>
-
-              {/* Article Cards */}
-              <Card>
-                <ArticleCard />
-              </Card>
-
-              <Card bg="primary" text="white" className="text-center p-3">
-                <blockquote className="blockquote mb-0 card-body">
-                  <p>
-                    3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
-                  </p>
-                  <footer className="blockquote-footer">
-                    <small className="text-muted">
-                      Someone famous in{" "}
-                      <cite title="Source Title">Source Title</cite>
-                    </small>
-                  </footer>
-                </blockquote>
-              </Card>
-
-              {/* Pie chart Card */}
-              <Card className="text-center">
-                <Card.Body>
-                  <Card.Title>Your Money Snapshot</Card.Title>
-                  <PieChart
-                    data={[
-                      { title: "Income", value: 125, color: "#85bb65" },
-                      { title: "Expenses", value: 30.18, color: "#BF0A30" },
-                    ]}
-                  />
-                </Card.Body>
               </Card>
 
               {/* Expense Card */}
@@ -144,6 +118,37 @@ class Dashboard extends Component {
                 <Button variant="secondary" size="lg" block id="addExpense">
                   Add New Expense
                 </Button>
+              </Card>
+
+              {/* Pie chart Card */}
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>Your Money Snapshot</Card.Title>
+                  <PieChart
+                    data={[
+                      { title: "Income", value: 125, color: "#85bb65" },
+                      { title: "Expenses", value: 15, color: "#BF0A30" },
+                    ]}
+                  />
+                </Card.Body>
+              </Card>
+
+              {/* Article Cards */}
+              <Card>
+                <ArticleCard />
+              </Card>
+
+              <Card className="text-center p-3">
+                <blockquote className="blockquote mb-0 card-body">
+                  <p>
+                    This made learning how to budget for my highschool finance class so fun!
+                  </p>
+                  <footer className="blockquote-footer">
+                    <small className="text-muted">
+                      Some kid probably
+                    </small>
+                  </footer>
+                </blockquote>
               </Card>
 
               {/* Calculator Card */}

@@ -14,7 +14,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>Banking 101</h3>
-          <a href = "https://www.moneyunder30.com/banking-basics" target="_blank">A Guide for Teenagers</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href ="https://www.moneyunder30.com/banking-basics" target="_blank">A Guide for Teenagers</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -26,7 +26,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>Budgeting for Teens</h3>
-          <a href = "https://www.moneyunder30.com/budgeting-for-teens" target="_blank">Grow Your Money While You're Young</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/budgeting-for-teens" target="_blank">Grow Your Money While You're Young</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -38,7 +38,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>How to Make Money</h3>
-          <a href = "https://www.moneyunder30.com/how-to-make-money-for-teens" target="_blank">A Guide for Teens</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/how-to-make-money-for-teens" target="_blank">A Guide for Teens</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -50,7 +50,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>How to Save Money</h3>
-          <a href = "https://www.moneyunder30.com/how-teens-can-save-money" target="_blank">As a Teen</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href ="https://www.moneyunder30.com/how-teens-can-save-money" target="_blank">As a Teen</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -62,7 +62,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>How to Spend Money Wisely</h3>
-          <a href = "https://www.moneyunder30.com/how-to-spend-money-wisely-for-teens" target="_blank">A Guide for Teens</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href ="https://www.moneyunder30.com/how-to-spend-money-wisely-for-teens" target="_blank">A Guide for Teens</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -74,7 +74,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>7 Tips on Saving</h3>
-          <a href = "https://www.moneyunder30.com/7-tips-on-saving-for-college-as-a-teen" target="_blank">For College as a Teen</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/7-tips-on-saving-for-college-as-a-teen" target="_blank">For College as a Teen</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -86,7 +86,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>8 Most Important Employee Rights</h3>
-          <a href = "https://www.moneyunder30.com/important-employee-rights-teens-should-know" target="_blank">Teens should know</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/important-employee-rights-teens-should-know" target="_blank">Teens should know</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -98,7 +98,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>Credit Card Basics</h3>
-          <a href = "https://www.moneyunder30.com/credit-card-basics" target="_blank">A Guide for Teens</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/credit-card-basics" target="_blank">A Guide for Teens</a>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -110,7 +110,7 @@ const ArticleCard = (props) => {
         />
         <Carousel.Caption>
           <h3>6 Money Lessons</h3>
-          <a href = "https://www.moneyunder30.com/money-lessons-our-parents-learned" target="_blank">Our Parents Learned, But We Didn't</a>
+          <a style={{textShadow: "-1px 1px 2px white", fontSize: "large", fontWeight: "bold"}} href = "https://www.moneyunder30.com/money-lessons-our-parents-learned" target="_blank">Our Parents Learned, But We Didn't</a>
         </Carousel.Caption>
       </Carousel.Item>
 

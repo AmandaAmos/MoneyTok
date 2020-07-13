@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table } from 'reactstrap';
 
+
 const Example = (props) => {
   return (
     <Table>
@@ -26,5 +27,6 @@ const Example = (props) => {
     </Table>
   );
 }
+
 
 export default Example;
