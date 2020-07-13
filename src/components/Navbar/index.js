@@ -1,4 +1,24 @@
 import React from "react";
+<<<<<<< HEAD
+import "./style.css";
+
+
+function Navbar() {
+    return(
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand">
+                        <img src="../../../images/MoneyTok.png" width="45" alt=""
+                        class="d-inline-block align-middle mr-2"></img>
+                        <span class="font-weight-bold">MoneyTok</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+                             
+    )
+=======
 import MoneyTok from "./MoneyTok.png";
 import Login from "../Modal/Login";
 import Register from "../Modal/Register";
@@ -55,6 +75,7 @@ function Navbar() {
       {/* </div> */}
     </nav>
   );
+>>>>>>> de4ac0e8189eccc34ef60b1ac087edf3c16b069e
 }
 
 export default Navbar;

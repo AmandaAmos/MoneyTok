@@ -1,5 +1,11 @@
 .jumbotron {
+<<<<<<< HEAD
+    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+=======
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqF0sujpf3kfZRaECbjc5Z4wENFMJOowCTCQ&usqp=CAU);
 color: white;
 text-shadow: -2px 2px 3px black;
+>>>>>>> de4ac0e8189eccc34ef60b1ac087edf3c16b069e
 }
