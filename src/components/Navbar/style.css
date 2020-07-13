@@ -1,7 +1,17 @@
 nav.navbar {
     margin-bottom: 0;
 }
+<<<<<<< HEAD
 h1 {
     color: white;
     text-align: center;
+=======
+
+a {
+    color: black
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+>>>>>>> de4ac0e8189eccc34ef60b1ac087edf3c16b069e
 }

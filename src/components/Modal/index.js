@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Login
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
@@ -89,3 +90,8 @@ window.onclick = function(event) {
     }
 }
 </script>
+=======
+export { default } from "./Register";
+export { default } from "./Login";
+export { default } from "./Income";
+>>>>>>> de4ac0e8189eccc34ef60b1ac087edf3c16b069e
