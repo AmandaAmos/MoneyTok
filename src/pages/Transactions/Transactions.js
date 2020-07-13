@@ -23,48 +23,53 @@ class Transactions extends Component {
             <h1>Money Tok</h1>
           </Jumbotron>
 
-            <Container>
-              <Form id="AddIncome">
-                <h2>Add New Income </h2>
-                <Form.Group>
-                  <Form.Label>Description</Form.Label>
-                  <Form.Control type="text" placeholder="Babysitting" />
-                </Form.Group>
+          <Container>
+            <Form id="AddIncome">
+              <h2>Add New Income </h2>
+              <Form.Group>
+                <Form.Label>Description</Form.Label>
+                <Form.Control type="text" placeholder="Babysitting" />
+              </Form.Group>
 
-                <Form.Group>
-                  <Form.Label>Amount</Form.Label>
-                  <Form.Control type="number" placeholder="25" />
-                </Form.Group>
+              <Form.Group>
+                <Form.Label>Amount</Form.Label>
+                <Form.Text className="text-muted">
+                 In Dollars ($)
+                </Form.Text>
+                <Form.Control type="number" placeholder="25" />
+              </Form.Group>
 
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-                {""}
-              </Form>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+              {""}
+            </Form>
 
-              <br/>
+            <br />
 
-              <Form id="AddExpense">
-                <h2>Add New Expense </h2>
-                <Form.Group>
-                  <Form.Label>Description</Form.Label>
-                  <Form.Control type="text" placeholder="School Lunch" />
-                </Form.Group>
+            <Form id="AddExpense">
+              <h2>Add New Expense </h2>
+              <Form.Group>
+                <Form.Label>Description</Form.Label>
+                <Form.Control type="text" placeholder="School Lunch" />
+              </Form.Group>
 
-                <Form.Group>
-                  <Form.Label>Amount</Form.Label>
-                  <Form.Control type="number" placeholder="10" />
-                  <br/>
-                  <Form.Check type="checkbox" label="Recurring Bill" />
-                </Form.Group>
+              <Form.Group>
+                <Form.Label>Amount</Form.Label>
+                <Form.Text className="text-muted">
+                 In Dollars ($)
+                </Form.Text>
+                <Form.Control type="number" placeholder="10" />
+                <br />
+                <Form.Check type="checkbox" label="Recurring Bill" />
+              </Form.Group>
 
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-                {""}
-              </Form>
-            </Container>
-  
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+              {""}
+            </Form>
+          </Container>
         </div>
       </div>
     );

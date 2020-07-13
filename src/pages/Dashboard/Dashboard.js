@@ -11,7 +11,7 @@ import MoneyInTable from "../../components/MoneyInTable";
 import MoneyOutTable from "../../components/MoneyOutTable";
 import Button from "react-bootstrap/Button";
 import { PieChart } from "react-minimal-pie-chart";
-import AddIncome from "../../components/Modal/Income";
+
 // import API from "../../utils/API";
 
 class Dashboard extends Component {
@@ -132,8 +132,9 @@ class Dashboard extends Component {
                   <Card.Title>Your Money Snapshot</Card.Title>
                   <PieChart
                     data={[
-                      { title: "Income", value: 125, color: "#85bb65" },
+                      { title: "Income", value: 125, color: "#85bb65"},
                       { title: "Expenses", value: 15, color: "#BF0A30" },
+                      
                     ]}
                   />
                 </Card.Body>
