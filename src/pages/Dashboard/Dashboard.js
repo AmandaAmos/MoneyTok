@@ -98,17 +98,17 @@ class Dashboard extends Component {
                 </Card.Body>
               </Card>
               <Card bg="primary" text="white" className="text-center p-3">
-                <blockquote className="blockquote mb-0 card-body">
+                <block className="block mb-0 card-body">
                   <p>
                     Money Graphic Goes here
                   </p>
-                  <footer className="blockquote-footer">
+                  <footer className="block-footer">
                     <small className="text-muted">
                       Someone famous in{" "}
                       <cite title="Source Title">Source Title</cite>
                     </small>
                   </footer>
-                </blockquote>
+                </block>
               </Card>
               <Card className="text-center">
                 <Card.Body>
