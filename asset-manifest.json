@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/MoneyTok/static/css/main.03a1286e.chunk.css",
+    "main.js": "/MoneyTok/static/js/main.b430a40f.chunk.js",
+    "main.js.map": "/MoneyTok/static/js/main.b430a40f.chunk.js.map",
+    "runtime-main.js": "/MoneyTok/static/js/runtime-main.7c878f69.js",
+    "runtime-main.js.map": "/MoneyTok/static/js/runtime-main.7c878f69.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/MoneyTok/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.505e89ff.chunk.js": "/MoneyTok/static/js/2.505e89ff.chunk.js",
+    "static/js/2.505e89ff.chunk.js.map": "/MoneyTok/static/js/2.505e89ff.chunk.js.map",
+    "index.html": "/MoneyTok/index.html",
+    "precache-manifest.54cc8e1a1fc0158b29acb950bbf3bbf6.js": "/MoneyTok/precache-manifest.54cc8e1a1fc0158b29acb950bbf3bbf6.js",
+    "service-worker.js": "/MoneyTok/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/MoneyTok/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.03a1286e.chunk.css.map": "/MoneyTok/static/css/main.03a1286e.chunk.css.map",
+    "static/js/2.505e89ff.chunk.js.LICENSE.txt": "/MoneyTok/static/js/2.505e89ff.chunk.js.LICENSE.txt",
+    "static/media/MoneyTok.png": "/MoneyTok/static/media/MoneyTok.20468282.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c878f69.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.505e89ff.chunk.js",
+    "static/css/main.03a1286e.chunk.css",
+    "static/js/main.b430a40f.chunk.js"
+  ]
+}
