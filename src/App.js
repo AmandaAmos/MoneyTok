@@ -8,24 +8,6 @@ import Profile from "./pages/Profile";
 // import Login from "./pages/Login";
 // import Register from "./pages/Register";
 import "./App.css";
-import Axios from "axios";
-app.use(express.static("public"));
-
-function App() {
-  Axios({
-    method: "GET",
-    url: "http://localhost:3001/",
-    headers: {
-      "Content-Type": "application/json"
-    }
-  }).then(res => {
-    console.log(res.data.message);
-  })
-}
-Axios.use(
-  session
-)
-
 
 class App extends Component {
   render() {

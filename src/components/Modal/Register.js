@@ -1,7 +1,73 @@
-import React, {useState} from "react";
+import React, { Component, useState} from "react";
 import {Modal, Button, Form} from "react-bootstrap";
+import MoneyTokDataService from "../../utils/API";
+
+export default class AddUser extends Component {
+    constructor(props) {
+        super(props);
+        this.saveUser = this.saveUser.bind(this);
+        this.newUser = this.newUser.bind(this);
+
+        this.state = {
+            id: null,
+            firstname: "",
+            lastname: "",
+            email: "",
+            balance: [],
+            username: "",
+            password: "",
+
+            submitted: false,
+        };
+    }
+
+    newUser() {
+        this.setState({
+            id: null,
+            firstname: "",
+            lastname: "",
+            email: "",
+            balance: [],
+            username: "",
+            password: "",
+
+            submitted: false
+        });
+    }
+
+    saveUser() {
+        const data = {
+            firstname: this.state.firstname,
+            lastname: this.state.lastname,
+            email: this.state.email,
+            balance: this.state.balance,
+            username: this.state.username,
+            password: this.state.password,
+        };
+        MoneyTokDataService.create(data)
+        .then(response => {
+            this.setState({
+                id: response.data.id,
+                firstname: response.data.firstname,
+                lastname: response.data.lastname,
+                email: response.data.email,
+                username: response.data.username,
+                password: response.data.password,
+                balance: response.data.balance,
+    
+                submitted: true
+            });
+            console.log(response.data);
+        })
+        .catch(e => {
+            console.log(e);
+        });
+    }
+}
+   
 
 function Register() {
+
     const [lgShow, setLgShow] = useState(false);
 
     return (
